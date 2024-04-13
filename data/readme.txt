@@ -1,0 +1,1 @@
+The files are located at: C:\Users\nascimth\Documents\Thiago\Eawag\Python\Data\CAMELS_CH_chem
