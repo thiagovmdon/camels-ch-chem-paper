@@ -6,3 +6,10 @@ __pycache__/
 *.xlsx
 data\*.csv
 results\*.csv
+*.cpg
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.shp
+*.shx
