@@ -13,3 +13,7 @@ results\*.csv
 *.sbx
 *.shp
 *.shx
+*.qmd
+*.png
+*.tif
+*.tiff
