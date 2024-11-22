@@ -34,7 +34,7 @@ def add_circular_legend(ax, color_mapping, legend_labels, legend_title):
     legend = ax.legend(handles, legend_labels, loc='upper left', bbox_to_anchor=(1, 1), title=legend_title)
     legend.get_frame().set_linewidth(0)  # Remove legend frame
     legend.get_frame().set_facecolor('none')  # Remove legend background
-    legend.set_bbox_to_anchor((-0.00, 1))  # Adjust legend position
+    legend.set_bbox_to_anchor((-0.05, 0.8))  # Adjust legend position
 
 
 def plot_num_measurementsmap_subplot(ax, plotsome: pd.DataFrame, xcoords="lon", ycoords="lat", column_labels="num_yearly_complete",
@@ -158,7 +158,7 @@ def generate_legend_and_color_mapping(variable_name, color_categories, xmin_hist
     elif color_palette == 'custom':
         # Define your custom color palette here
         color_mapping = {
-            f"{category[0]}-{category[1]}": ['#ffffcc', '#fdcc8a', '#fc8d59', '#d7301f', '#990000'][i] for i, category in enumerate(color_categories)
+            f"{category[0]}-{category[1]}": ['bisque', '#fdcc8a', '#fc8d59', '#d7301f', '#990000'][i] for i, category in enumerate(color_categories)
              #color_mapping[f"{category[0]}-{category[1]}"] = ['#ffbb78', '#ff7f0e', '#aec7e8', '#1f77b4', '#9467bd'][i] # This is from orange to purple
 
         }
@@ -186,7 +186,7 @@ def generate_legend_and_color_mapping(variable_name, color_categories, xmin_hist
 
     return variable_name, color_categories, legend_labels, color_mapping, xmin_hist, xmax_hist, base_hist, hist_bins
 
-def plot_variable_subplot(ax, variable, estreams_attributes, color_mapping_list, gdf, minx=-24, miny=35, maxx=40, maxy=70):
+def plot_variable_subplot(ax, variable, estreams_attributes, color_mapping_list, gdf):
     """
     Plot a variable on a subplot along with its legend and histogram.
 
@@ -214,16 +214,16 @@ def plot_variable_subplot(ax, variable, estreams_attributes, color_mapping_list,
     ax.set_facecolor('white')
 
     # Plot the shapefile with white facecolor and black boundaries
-    gdf.plot(ax=ax, facecolor='white', edgecolor='none', linewidth=0.2)
-    ax.set_xlim(minx, maxx) 
-    ax.set_ylim(miny, maxy)  
+    gdf.plot(ax=ax, facecolor='whitesmoke', edgecolor='black', linewidth=0.2)
+    ax.set_xlim(-24, 40) 
+    ax.set_ylim(35, 70)  
 
     # Plot the data on the map
     plot_num_measurementsmap_subplot(plotsome=estreams_attributes, xcoords="lon", ycoords="lat", column_labels=variable,
                                      color_categories=color_categories, color_mapping=color_mapping, 
                                      legend_title=legend_title, legend_labels=legend_labels, legend_loc='lower left', ax=ax, 
                                      set_map_limits=True, minx=-24, miny=35, maxx=40, maxy=70, show_legend=False, 
-                                     legend_outside=False, north_arrow=False, markersize_map=50)
+                                     legend_outside=False, north_arrow=False, markersize_map=1)
 
     # Turn off both x-axis and y-axis
     ax.set_axis_off()
