@@ -17,3 +17,5 @@ results\*.csv
 *.png
 *.tif
 *.tiff
+*.zip
+*json
