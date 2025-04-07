@@ -8,11 +8,11 @@ Contact: thiago.nascimento@eawag.ch
 ### Folders and content
 - **catchment_aggregated_data/**: contains `three` subfolders. Each is organized containing `one` csv-file per catchment, `115` files in total. The files are organized by time series (rows) and attribute variables (columns).
 	- **atmospheric_deposition/**:
-		- CAMELS_CH_Chem_atm_{basin_id}.csv
+		- camels_ch_chem_atmdepo_{basin_id}.csv
 	- **agricultural_data/**:
-		- CAMELS_CH_Chem_crops{basin_id}.csv
+		- camels_ch_chem_swisscrops{basin_id}.csv
 	- **livestock_data/**:
-		- CAMELS_CH_Chem_livestock_{basin_id}.csv
+		- camels_ch_chem_livestock_{basin_id}.csv
 
 - **shapefiles:** Contains `three` subfolders. 
 	- **camels_ch_del/**: contains two `shapefiles`. `One` shapefile includes the derived catchment boundaries associated with each gauge, and the other shapefile marks their location. Both files are referenced in in the Swiss coordinate system LV95 (sometimes also referred to as CH1903+), and were copied from the original CAMELS-CH. 
@@ -28,20 +28,22 @@ Contact: thiago.nascimento@eawag.ch
 - **stream_water_chemistry/**: contains `two` subfolders.  
 	- **timeseries/**: contains `two` nested sub-sub folders for respectively daily and hourly time steps. The csv-files in both are organized by time series (rows) and attribute variables (columns), and each column represents one of the water quality variable. Both nested subfolders contain `86` files. 
 		- **daily/**:
-			- CAMELS_CH_Chem_daily_{basin_id}.csv
+			- camels_ch_chem_daily_{basin_id}.csv
 		- **hourly/**:
-			- CAMELS_CH_Chem_hourly_{basin_id}.csv
+			- camels_ch_chem_hourly_{basin_id}.csv
 	- **interval_samples/**: contains `three` nested sub-subfolders. 
 		- **nawa_fracht/**: contains one csv-file per catchment covered (`24` files). The rows represent the dates, and each column represents one of the water quality variables.
-			- CAMELS_CH_Chem_nawafracht_{basin_id}.csv
+			- camels_ch_chem_nawafracht_{basin_id}.csv
 		- **nawa_trend/**: contains one csv-file per catchment covered (`76 files`) presents a similar structure as the anterior, but for NAWA TREND data.
-			- CAMELS_CH_Chem_nawatrend_{basin_id}.csv
+			- camels_ch_chem_nawatrend_{basin_id}.csv
 
-- **water_isotopes:** Contains `two` subfolders. Each is organized containing one csv-file per catchment with any isotopes data. The rows represent the dates, and each column represents either deuterium or oxygen-18 data. 
-	- **isot/**: contains `nine` files in total. 
-		- CAMELS_CH_Chem_isot_{basin_id}.csv
-	- **ch_irp/**: contains `xx` files in total. 
-		- CAMELS_CH_Chem_chirp_{basin_id}.csv
+- **water_isotopes:** contains `two` subfolders. 
+	- **streamwater/**: contains `two` subfolders. Each is organized containing one csv-file per catchment with any isotopes data. The rows represent the dates, and each column represents either deuterium or oxygen-18 data. 
+		- **isot/**: contains `nine` files in total. 
+			- camels_ch_chem_isot_{basin_id}.csv
+		- **ch_irp/**: contains `xx` files in total. 
+			- camels_ch_chem_chirp_{basin_id}.csv
+	- **rainwater/**: XX
 
 - **appendix/**: XX
 	- XX.txt
