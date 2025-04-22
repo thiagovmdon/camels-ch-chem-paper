@@ -1,1 +1,1 @@
-# CAMELS_CH_chem
+# CAMELS-CH-Chem

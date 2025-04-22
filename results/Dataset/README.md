@@ -1,18 +1,22 @@
 ## Swiss data quality: augmenting CAMELS-CH with isotopes, water quality, agricultural and atmospheric chemistry data 
 > April 2025
 
-Authors: Thiago V. M. do Nascimento, Ursula Schönenberger, Sandra Pool, Rosi Siber, Martina Kauzlaric, Pascal Horton, Marvin Höge, Marius G. Floriancic, Maria Staudinger, Florian Storck, Päivi Rinta, Jan Seibert and Fabrizio Fenicia  
+Authors: Thiago V. M. do Nascimento, Ursula Schönenberger, Marvin Höge, Sandra Pool, Rosi Siber, Martina Kauzlaric, Maria Staudinger, Pascal Horton, Marius G. Floriancic, Florian Storck, Päivi Rinta, Jan Seibert and Fabrizio Fenicia
 
 Contact: thiago.nascimento@eawag.ch
 
 ### Folders and content
-- **catchment_aggregated_data/**: contains `three` subfolders. Each is organized containing `one` csv-file per catchment, `115` files in total. The files are organized by time series (rows) and attribute variables (columns).
-	- **atmospheric_deposition/**:
-		- camels_ch_chem_atmdepo_{basin_id}.csv
+- **catchment_aggregated_data/**: contains `five` subfolders. Each is organized containing `one` csv-file per catchment, `115` files in total. The files are organized by time series (rows) and attribute variables (columns).
 	- **agricultural_data/**:
 		- camels_ch_chem_swisscrops{basin_id}.csv
+	- **atmospheric_deposition/**:
+		- camels_ch_chem_atmdepo_{basin_id}.csv
+	- **landcover_data/**:
+		- camels_ch_chem_landcover_{basin_id}.csv
 	- **livestock_data/**:
 		- camels_ch_chem_livestock_{basin_id}.csv
+	- **rain_water_isotopes/**:
+		- camels_ch_chem_rainisotopes_{basin_id}.csv
 
 - **shapefiles:** Contains `three` subfolders. 
 	- **camels_ch_del/**: contains two `shapefiles`. `One` shapefile includes the derived catchment boundaries associated with each gauge, and the other shapefile marks their location. Both files are referenced in in the Swiss coordinate system LV95 (sometimes also referred to as CH1903+), and were copied from the original CAMELS-CH. 
@@ -37,19 +41,35 @@ Contact: thiago.nascimento@eawag.ch
 		- **nawa_trend/**: contains one csv-file per catchment covered (`76 files`) presents a similar structure as the anterior, but for NAWA TREND data.
 			- camels_ch_chem_nawatrend_{basin_id}.csv
 
-- **water_isotopes:** contains `two` subfolders. 
-	- **streamwater/**: contains `two` subfolders. Each is organized containing one csv-file per catchment with any isotopes data. The rows represent the dates, and each column represents either deuterium or oxygen-18 data. 
-		- **isot/**: contains `nine` files in total. 
-			- camels_ch_chem_isot_{basin_id}.csv
-		- **ch_irp/**: contains `xx` files in total. 
-			- camels_ch_chem_chirp_{basin_id}.csv
-	- **rainwater/**: XX
+- **stream_water_isotopes:** contains `two` subfolders. 
+	- **isot/**: contains `nine` files in total. 
+		- camels_ch_chem_isot_{basin_id}.csv
+	- **ch_irp/**: contains `xx` files in total. 
+		- camels_ch_chem_chirp_{basin_id}.csv
 
 - **appendix/**: XX
 	- XX.txt
 	- XX.txt
 	- XX.txt
 	- XX.txt
+
+## Usage notes
+
+Due to potential measurement errors, the following variables from NAWA FRACHT (Table 2) should be used with caution:  
+•	Mg between 1.1.1990 and 31.12.2009 for all stations.
+•	pH_lab between 1.1.2000 and 1.1.2018 for all stations.
+•	pH_sensor between 1.1.2003 and 1.1.2014 for the following stations: 
+	o	Chancy, Aux Ripes - Rhône, nawaf_id 1838
+	o	Diepoldsau - Rhein, nawaf_id 1821
+	o	Hagneck - Aare, nawaf_id 1832
+	o	Mellingen - Reuss, nawaf_id 1835
+	o	Porte du Scex - Rhône, nawaf_id 1837
+	o	Rekingen - Rhein, nawaf_id 1825
+	o	Riazzino - Ticino, nawaf_id 1840
+	o	S-chanf - Inn, nawaf_id 2064
+	o	Weil, Palmrainbrücke - Rhein, nawaf_id 2078
+
+Currently there are monthly data for the years 2013 and 2020. The remaining years 2007-2023 will be produced and made available by the FOEN by the end of 2025. We expect update CAMELS-CH-Chem with such data in due time. 
 
 ## References
 Currently CAMELS-CH-Chem covers `115` rivers catchments within Swiss territory. Please refer to the [CAMELS-CH-Chem preprint](XX), for a detailed description of the current dataset, including their respective variables units. For the codes used to derive the current dataset, users can refer to the [CAMELS-CH-Chem GitHub](XX). 
