@@ -21,7 +21,8 @@ Contact: thiago.nascimento@eawag.ch
 - **shapefiles:** Contains `three` subfolders. 
 	- **camels_ch_del/**: contains two `shapefiles`. `One` shapefile includes the derived catchment boundaries associated with each gauge, and the other shapefile marks their location. Both files are referenced in in the Swiss coordinate system LV95 (sometimes also referred to as CH1903+), and were copied from the original CAMELS-CH. 
 		- camels_ch_chem_catchment_boundaries.{cpg,dbf,prj,shp,shx}
-	- **nawa_trend_del/**: provides the alternative delineation shapefile for the NAWA TREND catchments. 
+		- camels_ch_chem_gauging_stations.{cpg,dbf,prj,shp,shx}
+	- **nawa_trend_del/**: provides the alternative catchment delineation shapefile for the NAWA TREND catchments. 
 		- camels_ch_chem_catchment_boundaries_nawat.{cpg,dbf,prj,shp,shx}
 	- **nawa_fracht_del/**: like the anterior, but for NAWA FRACHT catchments.
 		- camels_ch_chem_catchment_boundaries_nawaf.{cpg,dbf,prj,shp,shx}
@@ -46,12 +47,6 @@ Contact: thiago.nascimento@eawag.ch
 		- camels_ch_chem_isot_{basin_id}.csv
 	- **ch_irp/**: contains `xx` files in total. 
 		- camels_ch_chem_chirp_{basin_id}.csv
-
-- **appendix/**: XX
-	- XX.txt
-	- XX.txt
-	- XX.txt
-	- XX.txt
 
 ## Usage notes
 
