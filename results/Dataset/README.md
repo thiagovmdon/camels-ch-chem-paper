@@ -7,19 +7,19 @@ Contact: thiago.nascimento@eawag.ch
 
 ### Folders and content
 - **catchment_aggregated_data/**: contains `five` subfolders. Each is organized containing `one` csv-file per catchment, `115` files in total. The files are organized by time series (rows) and attribute variables (columns).
-	- **agricultural_data/**:
+	- **agricultural_data/**: contains the crop-types data. 
 		- camels_ch_chem_swisscrops{basin_id}.csv
-	- **atmospheric_deposition/**:
+	- **atmospheric_deposition/**: contains the atmospheric deposition data.
 		- camels_ch_chem_atmdepo_{basin_id}.csv
-	- **landcover_data/**:
+	- **landcover_data/**: contains the landcover classes.
 		- camels_ch_chem_landcover_{basin_id}.csv
-	- **livestock_data/**:
+	- **livestock_data/**: contains the livestock unit data.
 		- camels_ch_chem_livestock_{basin_id}.csv
-	- **rain_water_isotopes/**:
+	- **rain_water_isotopes/**: contains the rain water catchment aggregated data. 
 		- camels_ch_chem_rainisotopes_{basin_id}.csv
 
 - **shapefiles:** Contains `three` subfolders. 
-	- **camels_ch_del/**: contains two `shapefiles`. `One` shapefile includes the derived catchment boundaries associated with each gauge, and the other shapefile marks their location. Both files are referenced in in the Swiss coordinate system LV95 (sometimes also referred to as CH1903+), and were copied from the original CAMELS-CH. 
+	- **camels_ch_del/**: contains two `shapefiles`. `One` shapefile includes the derived catchment boundaries associated with each gauge, and the `other` shapefile marks the location of these gauges. Both files are referenced in in the Swiss coordinate system LV95 (sometimes also referred to as CH1903+), and were copied from the original CAMELS-CH. 
 		- camels_ch_chem_catchment_boundaries.{cpg,dbf,prj,shp,shx}
 		- camels_ch_chem_gauging_stations.{cpg,dbf,prj,shp,shx}
 	- **nawa_trend_del/**: provides the alternative catchment delineation shapefile for the NAWA TREND catchments. 
@@ -43,14 +43,14 @@ Contact: thiago.nascimento@eawag.ch
 			- camels_ch_chem_nawatrend_{basin_id}.csv
 
 - **stream_water_isotopes:** contains `two` subfolders. 
-	- **isot/**: contains `nine` files in total. 
+	- **isot/**: contains `nine` files in total and were derived from the ISOT dataset. 
 		- camels_ch_chem_isot_{basin_id}.csv
-	- **ch_irp/**: contains `12` files in total. 
+	- **ch_irp/**: contains `12` files in total and were derived from the CH-IRP dataset. 
 		- camels_ch_chem_chirp_{basin_id}.csv
 
 ## Usage notes
 
-Due to potential measurement errors, the following variables from NAWA FRACHT (Table 2) should be used with caution:  
+Due to potential measurement errors, the following variables from NAWA FRACHT should be used with caution:  
 •	Mg between 1.1.1990 and 31.12.2009 for all stations.
 •	pH_lab between 1.1.2000 and 1.1.2018 for all stations.
 •	pH_sensor between 1.1.2003 and 1.1.2014 for the following stations: 
