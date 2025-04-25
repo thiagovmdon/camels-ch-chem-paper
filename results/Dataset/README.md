@@ -1,7 +1,7 @@
 ## Swiss data quality: augmenting CAMELS-CH with isotopes, water quality, agricultural and atmospheric chemistry data 
 > April 2025
 
-Authors: Thiago V. M. do Nascimento, Ursula Schönenberger, Marvin Höge, Sandra Pool, Rosi Siber, Martina Kauzlaric, Maria Staudinger, Pascal Horton, Marius G. Floriancic, Florian Storck, Päivi Rinta, Jan Seibert and Fabrizio Fenicia
+Authors: Thiago V. M. do Nascimento, Marvin Höge, Ursula Schönenberger, Sandra Pool, Rosi Siber, Martina Kauzlaric, Maria Staudinger, Pascal Horton, Marius G. Floriancic, Florian Storck, Päivi Rinta, Jan Seibert and Fabrizio Fenicia
 
 Contact: thiago.nascimento@eawag.ch
 
