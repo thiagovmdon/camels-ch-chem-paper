@@ -1,12 +1,12 @@
 # CAMELS-CH-Chem
 
-This repository encompasses all the code used to derive the CAMELS-CH-Chem dataset, and all the figures and validation provided in their accompaining paper. 
+This repository encompasses all the code used to derive the CAMELS-CH-Chem dataset. 
 
 ## Description 
 
 _CAMELS-CH-Chem_ is an extension of CAMELS-CH (Catchment Attributes and Meteorology for Large-sample Studies in Switzerland), incorporating up to 40 water quality parameters for 115 catchments across Switzerland.
 
-The EStreams dataset can be found [here](https://doi.org/10.5281/zenodo.10733142), and is currently described by the [publication](https://doi.org/10.1038/s41597-024-03706-1).
+The dataset can be found [here](https://doi.org/10.5281/zenodo.14980027), and is currently described by the [publication](xx).
 
 ## About this repository 
 
@@ -14,9 +14,7 @@ This repository is divided into four folders:
 
 | folder      | description                                                       |
 | ------------| ----------------------------------------------------------------- |
-| code        | where all the code used is stored.                                |
-| code/dataset| where all the code used to derive the dataset is stored.          |
-| code/paper  | where all the code used to derive the figs and analysis.          |
+| code        | where all the code used to derive the dataset is stored.          |
 | environments| where a environment.yml and a requirements.txt are provided.      |
 | results     | where all the results are stored.                                 |
 
@@ -35,18 +33,18 @@ To reproduce the Python environment for this project, you can use either the `en
 ### Using `environment.yml` (Conda)
 
 1. Clone the repository:
-   `git clone https://github.com/thiagovmdon/EStreams.git`
+   `git clone https://github.com/camels-ch/camels-ch-chem.git`
 
 2. Create the conda environment:
    `conda env create -f environment.yml`
 
 3. Activate the conda environment:
-   `conda activate estreams`
+   `conda activate camelschem`
 
 ### Using `requirements.txt` (pip)
 
 1. Clone the repository:
-   `git clone https://github.com/thiagovmdon/EStreams.git`
+   `git clone https://github.com/camels-ch/camels-ch-chem.git`
 
 2. Create a virtual environment:
    `python -m venv venv`
@@ -54,7 +52,7 @@ To reproduce the Python environment for this project, you can use either the `en
 3. Activate the virtual environment:
 
    - On Windows:
-     `venv\Scripts\activate`
+     `venv/Scripts/activate`
 
    - On macOS and Linux:
      `source venv/bin/activate`
@@ -63,7 +61,7 @@ To reproduce the Python environment for this project, you can use either the `en
    `pip install -r requirements.txt`
    
 ## References
-The [dataset](https://doi.org/10.5281/zenodo.14980027) and its corresponding [pre-print](https://doi.org/10.1038/s41597-024-03706-1). If users want to use the data, we recomend them to cite the paper and Zenodo repositories in their research. 
+The [dataset](https://doi.org/10.5281/zenodo.14980027) and its corresponding [pre-print](xx). If users want to use the data, we recomend them to cite the paper and Zenodo repositories in their research. 
 
 ## Contact information
 If you have any questions/feedback, please contact Thiago Nascimento (thiago.nascimento@eawag.ch)

@@ -45,7 +45,7 @@ Contact: thiago.nascimento@eawag.ch
 - **stream_water_isotopes:** contains `two` subfolders. 
 	- **isot/**: contains `nine` files in total and were derived from the ISOT dataset. 
 		- camels_ch_chem_isot_{basin_id}.csv
-	- **ch_irp/**: contains `12` files in total and were derived from the CH-IRP dataset. 
+	- **ch_irp/**: contains `11` files in total and were derived from the CH-IRP dataset. 
 		- camels_ch_chem_chirp_{basin_id}.csv
 
 ## Usage notes
@@ -63,8 +63,6 @@ Due to potential measurement errors, the following variables from NAWA FRACHT sh
 	o	Riazzino - Ticino, nawaf_id 1840
 	o	S-chanf - Inn, nawaf_id 2064
 	o	Weil, Palmrainbrücke - Rhein, nawaf_id 2078
-
-Currently there are monthly data for the years 2013 and 2020. The remaining years 2007-2023 will be produced and made available by the FOEN by the end of 2025. We expect update CAMELS-CH-Chem with such data in due time. 
 
 ## References
 Currently CAMELS-CH-Chem covers `115` rivers catchments within Swiss territory. Please refer to the CAMELS-CH-Chem preprint, for a detailed description of the current dataset, including their respective variables units. For the codes used to derive the current dataset, users can refer to the [CAMELS-CH-Chem GitHub](https://github.com/camels-ch/camels-ch-chem). 
