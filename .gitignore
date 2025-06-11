@@ -20,5 +20,6 @@ results\*.csv
 *.jpg
 *.zip
 *json
+*.pdf
 *.shp.xml
 !environments/requirements.txt

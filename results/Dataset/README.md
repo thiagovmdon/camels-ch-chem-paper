@@ -49,6 +49,7 @@ Contact: thiago.nascimento@eawag.ch
 		- camels_ch_chem_chirp_{basin_id}.csv
 
 ## Usage notes
+All folders contain one README-file, with the description of the variables that the respective CSV-file contains. All these tables were adapted from the original CAMELS-CH-Chem data descriptor manuscript. 
 
 Due to potential measurement errors, the following variables from NAWA FRACHT should be used with caution:  
 •	Mg between 1.1.1990 and 31.12.2009 for all stations.
