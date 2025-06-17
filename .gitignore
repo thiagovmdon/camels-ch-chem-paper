@@ -23,3 +23,5 @@ results\*.csv
 *.pdf
 *.shp.xml
 !environments/requirements.txt
+*.xls 
+*.dat
