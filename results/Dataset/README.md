@@ -1,5 +1,5 @@
 ## Swiss data quality: augmenting CAMELS-CH with isotopes, water quality, agricultural and atmospheric chemistry data 
-> April 2025
+> June 2025
 
 Authors: Thiago V. M. do Nascimento, Marvin Höge, Ursula Schönenberger, Sandra Pool, Rosi Siber, Martina Kauzlaric, Maria Staudinger, Pascal Horton, Marius G. Floriancic, Florian Storck, Päivi Rinta, Jan Seibert and Fabrizio Fenicia
 
@@ -47,6 +47,11 @@ Contact: thiago.nascimento@eawag.ch
 		- camels_ch_chem_isot_{basin_id}.csv
 	- **ch_irp/**: contains `11` files in total and were derived from the CH-IRP dataset. 
 		- camels_ch_chem_chirp_{basin_id}.csv
+
+- **additional_data_from_studies:** contains `two` subfolders and `one` csv-file. The csv-file provides a non-exhaustive overview of recent published studies performed in Switzerland, where water quality and isotope measurements were monitored in catchments nested within the CAMELS-CH-Chem catchments. The two sub-folders provides some non-published data from two of such studies. 
+	- overview_other_datasets_CH.csv
+	- **Aemiseggeretal2015/**: contains non-published data from the paper of Aemisegger et al. (2015) (https://doi.org/10.5194/hess-17-1661-2013). 
+	- **Muelleretal2013/**: contains non-published data from the paper of Müller et al. (2013) (https://doi.org/10.1002/2015GL063988). 
 
 ## Usage notes
 All folders contain one README-file, with the description of the variables that the respective CSV-file contains. All these tables were adapted from the original CAMELS-CH-Chem data descriptor manuscript. 
