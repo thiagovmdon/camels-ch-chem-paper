@@ -1,5 +1,5 @@
 ## Swiss data quality: augmenting CAMELS-CH with isotopes, water quality, agricultural and atmospheric chemistry data 
-> June 2025
+> July 2025
 
 Authors: Thiago V. M. do Nascimento, Marvin Höge, Ursula Schönenberger, Sandra Pool, Rosi Siber, Martina Kauzlaric, Maria Staudinger, Pascal Horton, Marius G. Floriancic, Florian Storck, Päivi Rinta, Jan Seibert and Fabrizio Fenicia
 
@@ -74,4 +74,4 @@ Due to potential measurement errors, the following variables from NAWA FRACHT sh
 Currently CAMELS-CH-Chem covers `115` rivers catchments within Swiss territory. Please refer to the CAMELS-CH-Chem preprint, for a detailed description of the current dataset, including their respective variables units. For the codes used to derive the current dataset, users can refer to the [CAMELS-CH-Chem GitHub](https://github.com/camels-ch/camels-ch-chem). 
 
 ## How to cite
-Medeiros do Nascimento, T. V., Schönenberger, U., Höge, M., Pool, S., Siber, R., Kauzlaric, M., Horton, P., Günter Floriancic, M., Staudinger, M., Storck, F., Rinta, P., Seibert, J., & Fenicia, F. (2025). Swiss data quality: augmenting CAMELS-CH with data on isotopes, water quality, agricultural data and atmospheric chemistry (0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14980027
+Medeiros do Nascimento, T. V., Höge, M., Schönenberger, U., Pool, S., Siber, R., Kauzlaric, M., Staudinger, M., Horton, P., Günter Floriancic, M., Storck, F., Rinta, P., Seibert, J., & Fenicia, F. (2025). Swiss data quality: augmenting CAMELS-CH with isotopes, water quality, agricultural and atmospheric chemistry data (0.2) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.15707170
